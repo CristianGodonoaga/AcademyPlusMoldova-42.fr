@@ -12,6 +12,6 @@ char	*ft_strcpy(char *dest, const char *src)
 		dest[i] = temp_src[i];
 		i++;
 	}
-	dest = '\0';
+	dest[i] = '\0';
 	return (dest);
 }
