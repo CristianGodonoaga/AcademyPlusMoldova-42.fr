@@ -6,15 +6,18 @@
 /*   By: cgodonoa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/10 15:58:12 by cgodonoa          #+#    #+#             */
-/*   Updated: 2016/11/10 15:58:45 by cgodonoa         ###   ########.fr       */
+/*   Updated: 2016/11/12 19:43:55 by cgodonoa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include"libft.h" 
+
+#include "libft.h" 
 
 void	ft_putstr(const char *str)
 {
-	int i;
+	int	i;
 
+	if (!str)
+		return;
 	i = 0;
 	while (str[i] != '\0')
 	{

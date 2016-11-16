@@ -1,28 +1,40 @@
-#include"libft.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cgodonoa <cgodonoa@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2016/11/12 18:48:52 by cgodonoa          #+#    #+#             */
+/*   Updated: 2016/11/12 23:32:33 by cgodonoa         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-char    *ft_itoa(int n)
+#include "libft.h"
+
+char	*ft_itoa(int n)
 {
-    int     i;
-    int     nb;
-    char    *temp;
+	int		i;
+	long	nb;
+	char	*temp;
 
-    nb = n;
-    i = 0;
-    while (nb != 0)
-    {
-        nb /= 10;
-        i++;
-    }
-    (n <= 0) ? (i++) : 0;
-    temp = (char *)malloc(sizeof(temp) * (i + 1));
-    if (!temp)
-        return (NULL);
-    temp[i--] = '\0';
-    (n < 0) ? (n*=-1, temp[0] = '-') : (temp[0] = '0');
-    while (n)
-    {
-        temp[i--] = (unsigned char)(n % 10) + 48;
-        n /= 10;
-    }
-    return (temp);
+	nb = n;
+	i = 0;
+	while (n != 0)
+	{
+		n /= 10;
+		i++;
+	}
+	(nb <= 0) ? (i++) : 0;
+	temp = (char *)malloc(sizeof(temp) * (i + 1));
+	if (!temp)
+		return (NULL);
+	temp[i--] = '\0';
+	(nb < 0) ? (nb *= -1, temp[0] = '-') : (temp[0] = '0');
+	while (nb)
+	{
+		temp[i--] = (unsigned char)(nb % 10) + 48;
+		nb /= 10;
+	}
+	return (temp);
 }

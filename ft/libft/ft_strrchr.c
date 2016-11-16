@@ -1,15 +1,27 @@
-#include"libft.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cgodonoa <cgodonoa@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2016/11/12 20:03:33 by cgodonoa          #+#    #+#             */
+/*   Updated: 2016/11/15 17:18:34 by cgodonoa         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strrchr(char *str, int s)
 {
-	int		i;
+	int	i;
 
 	i = 0;
 	while (str[i] != '\0')
 		i++;
-	while(str[i] != s && i >= 0)
+	while (str[i] != (char)s && i >= 0)
 		i--;
-	if(i >= 0 && str[i] == s)
-		return(&str[i]);
-	return(0);
+	if (i >= 0 && str[i] == (char)s)
+		return (&str[i]);
+	return (0);
 }

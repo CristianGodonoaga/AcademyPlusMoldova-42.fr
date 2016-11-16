@@ -6,13 +6,15 @@
 /*   By: cgodonoa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/07/13 14:13:42 by cgodonoa          #+#    #+#             */
-/*   Updated: 2016/07/13 14:13:44 by cgodonoa         ###   ########.fr       */
+/*   Updated: 2016/11/12 20:15:01 by cgodonoa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+ #include "libft.h"
+
 void	ft_swap(int *a, int *b)
 {
-	int temp;
+	int	temp;
 
 	temp = *a;
 	*b = *a;

@@ -1,27 +1,29 @@
-#include"libft.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cgodonoa <cgodonoa@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2016/11/12 19:26:59 by cgodonoa          #+#    #+#             */
+/*   Updated: 2016/11/16 16:45:55 by cgodonoa         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void    *ft_memmove(void *destptr, const void *srcptr, size_t num)
+#include "libft.h"
+
+void	*ft_memmove(void *destptr, const void *srcptr, size_t num)
 {
-	size_t	i;
-	char	*temp;
 	char	*dest;
 	char	*src;
 
 	dest = (char*)destptr;
 	src = (char*)srcptr;
-	temp = (char *)malloc(sizeof(temp) * num);
-	i = 0;
-	while (i < num)
+	num--;
+	while ((int)num >= 0)
 	{
-		temp[i] = src[i];
-		i++;
+		dest[num] = src[num];
+		num--;
 	}
-	i = 0;
-	while(i < num)
-	{
-		dest[i] = temp[i];
-	i++;
-	}
-	free(temp);
 	return (destptr);
 }
