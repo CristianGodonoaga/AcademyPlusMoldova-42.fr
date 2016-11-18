@@ -6,7 +6,7 @@
 /*   By: cgodonoa <cgodonoa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/12 14:38:18 by cgodonoa          #+#    #+#             */
-/*   Updated: 2016/11/13 19:40:23 by cgodonoa         ###   ########.fr       */
+/*   Updated: 2016/11/16 21:18:43 by cgodonoa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,14 +24,14 @@ int	ft_atoi(const char *str)
 		|| str[i] == '\v' || str[i] == '\f')
 		i++;
 	semn = 1;
-	if(str[i] == '-')
+	if (str[i] == '-')
 	{
 		semn = -1;
 		i++;
 	}
 	else if (str[i] == '+')
 		i++;
-	while(str[i] >= '0' && str[i] <= '9')
+	while (str[i] >= '0' && str[i] <= '9')
 	{
 		if (nb > 0)
 			nb *= 10;

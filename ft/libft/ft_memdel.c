@@ -6,7 +6,7 @@
 /*   By: cgodonoa <cgodonoa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/12 19:26:14 by cgodonoa          #+#    #+#             */
-/*   Updated: 2016/11/12 19:32:35 by cgodonoa         ###   ########.fr       */
+/*   Updated: 2016/11/16 22:28:16 by cgodonoa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_memdel(void **ap)
 {
 	if (!ap)
-		return;
+		return ;
 	free(*ap);
 	*ap = NULL;
 }

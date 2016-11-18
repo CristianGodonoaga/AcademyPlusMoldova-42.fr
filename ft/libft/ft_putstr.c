@@ -25,3 +25,4 @@ void	ft_putstr(const char *str)
 		i += 1;
 	}
 }
+

@@ -25,3 +25,4 @@ void	*ft_memalloc(size_t size)
 		*(temp + size) = 0;
 	return ((void *)temp);
 }
+

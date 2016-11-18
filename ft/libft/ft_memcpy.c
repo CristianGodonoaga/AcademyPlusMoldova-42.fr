@@ -6,7 +6,7 @@
 /*   By: cgodonoa <cgodonoa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/12 19:05:49 by cgodonoa          #+#    #+#             */
-/*   Updated: 2016/11/12 19:06:54 by cgodonoa         ###   ########.fr       */
+/*   Updated: 2016/11/16 22:31:53 by cgodonoa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,11 @@
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	size_t	i;
-	char	*temp_dest = (char *)dest;
-	char	*temp_src = (char *)src;
 
 	i = 0;
 	while (i < n)
 	{
-		temp_dest[i] = temp_src[i];
+		*((unsigned char *)dest + i) = *((unsigned char*)src + i);
 		i++;
 	}
 	return (dest);

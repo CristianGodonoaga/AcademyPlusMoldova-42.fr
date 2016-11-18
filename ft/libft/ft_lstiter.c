@@ -26,3 +26,4 @@ void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 		ptr_next = ptr_curent->next;
 	}
 }
+

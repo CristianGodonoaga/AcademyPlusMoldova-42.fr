@@ -6,7 +6,7 @@
 /*   By: cgodonoa <cgodonoa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/12 18:48:52 by cgodonoa          #+#    #+#             */
-/*   Updated: 2016/11/12 23:32:33 by cgodonoa         ###   ########.fr       */
+/*   Updated: 2016/11/16 22:17:30 by cgodonoa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char	*ft_itoa(int n)
 		i++;
 	}
 	(nb <= 0) ? (i++) : 0;
-	temp = (char *)malloc(sizeof(temp) * (i + 1));
+	temp = (char *)malloc( sizeof(temp) * (i + 1));
 	if (!temp)
 		return (NULL);
 	temp[i--] = '\0';
