@@ -6,7 +6,7 @@
 #    By: cgodonoa <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/11 16:34:31 by cgodonoa          #+#    #+#              #
-#    Updated: 2016/11/11 16:34:36 by cgodonoa         ###   ########.fr        #
+#    Updated: 2016/11/19 09:23:29 by cgodonoa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ SRC =	ft_isascii.c ft_memcmp.c ft_strchr.c ft_strlen.c ft_strrchr.c 		\
 		ft_lstnew.c ft_lstdelone.c ft_lstadd.c ft_lstiter.c ft_lstmap.c 	\
 		ft_lstdel.c							 								\
 		ft_swap.c ft_strlcpy.c ft_str_is_printable.c ft_strupcase.c			\
-		ft_strlowcase.c														\
+		ft_strlowcase.c	ft_count_digit.c													\
 
 OBJECT = $(SRC:.c=.o)
 

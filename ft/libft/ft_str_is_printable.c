@@ -6,9 +6,11 @@
 /*   By: cgodonoa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/07/11 14:24:33 by cgodonoa          #+#    #+#             */
-/*   Updated: 2016/11/12 19:51:09 by cgodonoa         ###   ########.fr       */
+/*   Updated: 2016/11/19 10:25:14 by cgodonoa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_str_is_printable(char *str)
 {

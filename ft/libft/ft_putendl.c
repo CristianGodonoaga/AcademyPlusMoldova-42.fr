@@ -6,7 +6,7 @@
 /*   By: cgodonoa <cgodonoa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/12 19:36:08 by cgodonoa          #+#    #+#             */
-/*   Updated: 2016/11/12 19:36:21 by cgodonoa         ###   ########.fr       */
+/*   Updated: 2016/11/18 23:11:53 by cgodonoa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,4 +19,3 @@ void	ft_putendl(char const *s)
 	ft_putstr(s);
 	ft_putchar('\n');
 }
-

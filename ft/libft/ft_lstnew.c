@@ -6,7 +6,7 @@
 /*   By: cgodonoa <cgodonoa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/12 18:59:06 by cgodonoa          #+#    #+#             */
-/*   Updated: 2016/11/16 22:22:10 by cgodonoa         ###   ########.fr       */
+/*   Updated: 2016/11/18 23:03:18 by cgodonoa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,9 @@ t_list	*ft_lstnew(void const *content, size_t content_size)
 		return (NULL);
 	temp->content = (void*)content;
 	temp->next = NULL;
-	(!content) ? (temp->content_size = 0) : (temp->content_size = content_size);
+	if (!content)
+		temp->content_size = 0;
+	else
+		temp->content_size = content_size;
 	return (temp);
 }
