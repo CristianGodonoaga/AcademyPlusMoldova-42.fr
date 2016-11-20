@@ -6,7 +6,7 @@
 /*   By: cgodonoa <cgodonoa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/12 20:08:30 by cgodonoa          #+#    #+#             */
-/*   Updated: 2016/11/13 01:07:58 by cgodonoa         ###   ########.fr       */
+/*   Updated: 2016/11/19 18:35:20 by cgodonoa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,12 +40,12 @@ char	**ft_strsplit(char const *s, char c)
 	unsigned int	k;
 	char			**temp;
 
-	temp = (char **)malloc(sizeof(temp) * ft_count_word(s,c) + 1);
+	temp = (char **)malloc(sizeof(temp) * ft_count_word(s, c) + 1);
 	i = 0;
 	k = 0;
 	while (s[i] != '\0' && temp)
 	{
-		if(s[i] == c)
+		if (s[i] == c)
 		{
 			i++;
 			continue;

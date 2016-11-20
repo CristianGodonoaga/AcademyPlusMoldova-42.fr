@@ -6,7 +6,7 @@
 /*   By: cgodonoa <cgodonoa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/12 19:55:44 by cgodonoa          #+#    #+#             */
-/*   Updated: 2016/11/12 19:56:22 by cgodonoa         ###   ########.fr       */
+/*   Updated: 2016/11/19 18:17:57 by cgodonoa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 size_t	ft_strlen(const char *str)
 {
 	int	i;
-	
+
 	i = 0;
 	while (str[i] != '\0')
 		i++;

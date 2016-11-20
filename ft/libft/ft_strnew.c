@@ -6,7 +6,7 @@
 /*   By: cgodonoa <cgodonoa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/12 20:01:52 by cgodonoa          #+#    #+#             */
-/*   Updated: 2016/11/12 20:02:23 by cgodonoa         ###   ########.fr       */
+/*   Updated: 2016/11/19 18:28:57 by cgodonoa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strnew(size_t size)
 	temp = (char*)malloc(sizeof(temp) * size + 1);
 	if (!temp)
 		return (NULL);
-	while ((size--)>0)
+	while ((size--) > 0)
 		*(temp + size) = '\0';
-	return temp;
+	return (temp);
 }

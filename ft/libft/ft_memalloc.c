@@ -6,7 +6,7 @@
 /*   By: cgodonoa <cgodonoa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/12 19:01:22 by cgodonoa          #+#    #+#             */
-/*   Updated: 2016/11/12 19:24:26 by cgodonoa         ###   ########.fr       */
+/*   Updated: 2016/11/19 18:49:15 by cgodonoa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,4 +25,3 @@ void	*ft_memalloc(size_t size)
 		*(temp + size) = 0;
 	return ((void *)temp);
 }
-

@@ -6,7 +6,7 @@
 /*   By: cgodonoa <cgodonoa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/12 19:44:56 by cgodonoa          #+#    #+#             */
-/*   Updated: 2016/11/12 19:45:22 by cgodonoa         ###   ########.fr       */
+/*   Updated: 2016/11/19 17:57:18 by cgodonoa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strcat(char *dest, const char *src)
 	while (dest[i] != '\0')
 		i++;
 	while (src[j] != '\0')
-	{	
+	{
 		dest[i] = src[j];
 		j++;
 		i++;

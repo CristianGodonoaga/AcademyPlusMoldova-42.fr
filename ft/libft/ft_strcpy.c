@@ -6,7 +6,7 @@
 /*   By: cgodonoa <cgodonoa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/12 19:47:41 by cgodonoa          #+#    #+#             */
-/*   Updated: 2016/11/12 19:48:06 by cgodonoa         ###   ########.fr       */
+/*   Updated: 2016/11/19 18:10:19 by cgodonoa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,11 @@
 char	*ft_strcpy(char *dest, const char *src)
 {
 	size_t	i;
-	char	*temp_src;
-	
-	temp_src = (char *)src;
+
 	i = 0;
-	while (temp_src[i] != '\0')
+	while (src[i] != '\0')
 	{
-		dest[i] = temp_src[i];
+		dest[i] = src[i];
 		i++;
 	}
 	dest[i] = '\0';

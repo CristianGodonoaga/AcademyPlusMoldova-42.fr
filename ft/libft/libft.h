@@ -6,7 +6,7 @@
 /*   By: cgodonoa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/11 16:34:20 by cgodonoa          #+#    #+#             */
-/*   Updated: 2016/11/19 10:31:06 by cgodonoa         ###   ########.fr       */
+/*   Updated: 2016/11/20 15:11:17 by cgodonoa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include "string.h"
 # include "unistd.h"
 
-typedef struct		s_list
+typedef struct	s_list
 {
 	void		*content;
 	size_t		content_size;
@@ -88,7 +88,6 @@ t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 int		ft_str_is_printable(char *str);
 void	ft_swap(int *a, int *b);
 size_t	ft_strlcpy(char *dest, char *src, size_t size);
-int		ft_str_is_printable(char *str);
 char	*ft_strupcase(char *str);
 char	*ft_strlowcase(char *str);
 size_t	ft_count_digit(long n);
