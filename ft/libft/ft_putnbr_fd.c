@@ -6,7 +6,7 @@
 /*   By: cgodonoa <cgodonoa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/12 19:42:41 by cgodonoa          #+#    #+#             */
-/*   Updated: 2016/11/19 17:53:53 by cgodonoa         ###   ########.fr       */
+/*   Updated: 2016/11/20 18:36:39 by cgodonoa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,8 @@ void	ft_putnbr_fd(int n, int fd)
 	int		byte;
 
 	i = ft_count_digit(n);
-	if (n < 0){
+	if (n < 0)
+	{
 		i++;
 		temp[0] = '-';
 	}
@@ -32,7 +33,7 @@ void	ft_putnbr_fd(int n, int fd)
 	temp[i--] = '\0';
 	while (n)
 	{
-		temp[i--] = (n % 10)*(1 - 2 *(n < 0)) + 48;
+		temp[i--] = (n % 10) * (1 - 2 * (n < 0)) + 48;
 		n /= 10;
 	}
 	write(fd, temp, byte);

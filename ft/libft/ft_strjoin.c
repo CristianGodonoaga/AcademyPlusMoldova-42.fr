@@ -6,7 +6,7 @@
 /*   By: cgodonoa <cgodonoa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/12 19:52:19 by cgodonoa          #+#    #+#             */
-/*   Updated: 2016/11/19 18:18:58 by cgodonoa         ###   ########.fr       */
+/*   Updated: 2016/11/21 17:45:57 by cgodonoa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,14 @@ char	*ft_strjoin(char const *s1, char const *s2)
 {
 	int		i;
 	int		j;
-	int		len;
 	char	*temp;
 
 	if (!s1 || !s2)
 		return (NULL);
-	len = ft_strlen((char *)s1) + ft_strlen((char *)s2);
-	temp = (char *)malloc(sizeof(temp) * len + 1);
+	temp = (char *)malloc(sizeof(temp) * (ft_strlen((char *)s1) +
+	ft_strlen((char *)s2)) + 1);
+	if (!temp)
+		return (NULL);
 	i = 0;
 	while (s1[i] != '\0')
 	{

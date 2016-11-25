@@ -6,7 +6,7 @@
 /*   By: cgodonoa <cgodonoa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/12 14:38:18 by cgodonoa          #+#    #+#             */
-/*   Updated: 2016/11/18 22:59:01 by cgodonoa         ###   ########.fr       */
+/*   Updated: 2016/11/21 19:12:13 by cgodonoa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,9 +33,8 @@ int	ft_atoi(const char *str)
 		i++;
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		if (nb > 0)
-			nb *= 10;
-		nb = nb + (str[i] - 48);
+		nb *= 10;
+		nb = nb + ((int)str[i] - 48);
 		i++;
 	}
 	return (nb * semn);

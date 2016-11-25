@@ -6,7 +6,7 @@
 /*   By: cgodonoa <cgodonoa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/12 20:08:30 by cgodonoa          #+#    #+#             */
-/*   Updated: 2016/11/19 18:35:20 by cgodonoa         ###   ########.fr       */
+/*   Updated: 2016/11/21 18:20:08 by cgodonoa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,11 @@
 
 static int	ft_count_word(const char *s, char c)
 {
-	int	i;
-	int	j;
+	int				i;
+	int				j;
 
+	if (!s)
+		return (0);
 	i = 0;
 	j = 0;
 	while (s[i])
@@ -33,29 +35,39 @@ static int	ft_count_word(const char *s, char c)
 	return (j);
 }
 
-char	**ft_strsplit(char const *s, char c)
+static int	ft_check(char c1, char c2, unsigned int *i)
+{
+	if (c1 == c2)
+	{
+		*i = *i + 1;
+		return (1);
+	}
+	return (0);
+}
+
+char		**ft_strsplit(char const *s, char c)
 {
 	unsigned int	i;
 	unsigned int	j;
 	unsigned int	k;
 	char			**temp;
 
-	temp = (char **)malloc(sizeof(temp) * ft_count_word(s, c) + 1);
+	if (!s)
+		return (NULL);
+	temp = (char **)malloc(sizeof(*temp) * ft_count_word(s, c) + 1);
+	if (!temp)
+		return (NULL);
 	i = 0;
 	k = 0;
-	while (s[i] != '\0' && temp)
+	while (s[i] != '\0' && s)
 	{
-		if (s[i] == c)
-		{
-			i++;
+		if (ft_check(s[i], c, &i))
 			continue;
-		}
 		j = i;
 		while (s[j] != c && s[j])
 			j++;
-		temp[k] = ft_strsub(s, i, j - i);
+		temp[k++] = ft_strsub(s, i, j - i);
 		i = j;
-		k++;
 	}
 	temp[k] = NULL;
 	return (temp);

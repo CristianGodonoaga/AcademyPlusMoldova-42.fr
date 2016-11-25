@@ -6,7 +6,7 @@
 /*   By: cgodonoa <cgodonoa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/20 16:02:19 by cgodonoa          #+#    #+#             */
-/*   Updated: 2016/11/20 16:02:21 by cgodonoa         ###   ########.fr       */
+/*   Updated: 2016/11/20 18:18:35 by cgodonoa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 size_t	ft_count_digit(long nb)
 {
 	size_t		i;
-	
+
 	i = 0;
 	if (nb == 0)
 		return (1);

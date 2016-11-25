@@ -6,7 +6,7 @@
 /*   By: cgodonoa <cgodonoa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/12 20:11:07 by cgodonoa          #+#    #+#             */
-/*   Updated: 2016/11/18 23:28:33 by cgodonoa         ###   ########.fr       */
+/*   Updated: 2016/11/20 21:40:01 by cgodonoa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strstr(const char *str1, const char *str2)
 	j = 0;
 	if (str2[j] == '\0')
 		return ((char *)&str1[i]);
-	while (str1[i] != '\0' && *str2 != '\0')
+	while (str1[i] != '\0')
 	{
 		while (str1[i] == str2[j] && str1[i] != '\0')
 		{
@@ -30,6 +30,7 @@ char	*ft_strstr(const char *str1, const char *str2)
 			i++;
 			j++;
 		}
+		i = i - j;
 		i++;
 		j = 0;
 	}

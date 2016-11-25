@@ -6,7 +6,7 @@
 /*   By: cgodonoa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/07/11 14:24:33 by cgodonoa          #+#    #+#             */
-/*   Updated: 2016/11/19 18:19:53 by cgodonoa         ###   ########.fr       */
+/*   Updated: 2016/11/21 19:07:00 by cgodonoa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ size_t	ft_strlcpy(char *dest, char *src, size_t size)
 {
 	size_t	len;
 
+	if (!dest || !src)
+		return (0);
 	len = 0;
 	while (*src++ != '\0')
 		len++;
