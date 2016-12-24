@@ -6,7 +6,7 @@
 /*   By: cgodonoa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/11 16:34:20 by cgodonoa          #+#    #+#             */
-/*   Updated: 2016/11/25 14:35:51 by cgodonoa         ###   ########.fr       */
+/*   Updated: 2016/12/01 19:44:12 by cgodonoa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,4 +89,6 @@ void				ft_swap(int *a, int *b);
 char				*ft_strupcase(char *str);
 char				*ft_strlowcase(char *str);
 char				*ft_itoa_base(int value, int base);
+unsigned char		reverse_bits(unsigned char n);
+void				print_bits(unsigned char octet);
 #endif
