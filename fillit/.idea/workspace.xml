@@ -13,172 +13,13 @@
     </ADDITIONAL_GENERATION_ENVIRONMENT>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a492dea-78ea-4a2f-9df6-5cd413e39fc4" name="Default" comment="Problems with letter into solved array + don't accept the figure &quot;S&quot;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/libft.a" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/auteur" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_atoi.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_bzero.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_count_digit.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_isalnum.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_isalpha.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_isascii.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_isdigit.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_isprint.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_ispunct.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_itoa.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_itoa_base.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_lstadd.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_lstdel.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_lstdelone.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_lstfree.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_lstiter.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_lstmap.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_lstnew.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_lstrevers.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_memalloc.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_memccpy.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_memchr.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_memcmp.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_memcpy.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_memdel.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_memmove.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_memset.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_print_bits.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_putchar.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_putchar_fd.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_putendl.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_putendl_fd.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_putnbr.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_putnbr_fd.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_putstr.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_putstr_fd.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_reverse_bits.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_str_is_printable.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_strcat.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_strchr.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_strclr.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_strcmp.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_strcpy.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_strdel.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_strdup.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_strequ.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_striter.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_striteri.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_strjoin.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_strlcat.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_strlcpy.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_strlen.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_strlowcase.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_strmap.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_strmapi.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_strncat.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_strncmp.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_strncpy.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_strnequ.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_strnew.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_strnstr.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_strrchr.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_strsplit.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_strstr.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_strsub.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_strtrim.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_strupcase.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_swap.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_tolower.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/ft_toupper.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/libft.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/tests/test_libft_partie_1.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/tests/test_libft_partie_2.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/includes/libft/tests/test_libft_partie_bonus.c" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/a.out" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fillit.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/Makefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/auteur" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_atoi.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_bzero.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_count_digit.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_isalnum.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_isalpha.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_isascii.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_isdigit.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_isprint.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_ispunct.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_itoa.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_itoa_base.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_lstadd.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_lstdel.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_lstdelone.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_lstiter.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_lstmap.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_lstnew.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_memalloc.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_memccpy.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_memchr.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_memcmp.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_memcpy.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_memdel.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_memmove.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_memset.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_print_bits.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_putchar.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_putchar_fd.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_putendl.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_putendl_fd.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_putnbr.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_putnbr_fd.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_putstr.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_putstr_fd.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_reverse_bits.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_str_is_printable.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_strcat.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_strchr.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_strclr.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_strcmp.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_strcpy.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_strdel.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_strdup.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_strequ.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_striter.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_striteri.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_strjoin.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_strlcat.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_strlcpy.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_strlen.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_strlowcase.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_strmap.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_strmapi.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_strncat.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_strncmp.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_strncpy.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_strnequ.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_strnew.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_strnstr.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_strrchr.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_strsplit.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_strstr.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_strsub.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_strtrim.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_strupcase.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_swap.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_tolower.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/ft_toupper.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/libft.a" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/libft.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/libft.h.gch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/tests/test_libft_partie_1.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/tests/test_libft_partie_2.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libft/tests/test_libft_partie_bonus.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solve.c" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../libft/Makefile" afterPath="$PROJECT_DIR$/../libft/Makefile" />
+    <list default="true" id="9a492dea-78ea-4a2f-9df6-5cd413e39fc4" name="Default" comment="parsing of the functions&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/fillit.iml" afterPath="$PROJECT_DIR$/.idea/fillit.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/11.fillit" afterPath="$PROJECT_DIR$/test/11.fillit" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../libft/libft.h" afterPath="$PROJECT_DIR$/../libft/libft.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.c" afterPath="$PROJECT_DIR$/src/main.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/solve.c" afterPath="$PROJECT_DIR$/src/solve.c" />
     </list>
     <ignored path="fillit.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -189,6 +30,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -201,42 +43,58 @@
       <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+            <state relative-caret-position="195">
+              <caret line="13" column="89" selection-start-line="13" selection-start-column="89" selection-end-line="13" selection-end-column="89" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.c" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scr/main.c">
+      <file leaf-file-name="11.fillit" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/11.fillit">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#36#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="60">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="solve.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scr/solve.c">
+      <file leaf-file-name="main.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="180">
+              <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fillit.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scr/fillit.h">
+      <file leaf-file-name="solve.c" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/solve.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="15">
+              <caret line="54" column="15" selection-start-line="54" selection-start-column="12" selection-end-line="98" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addition.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/addition.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ft_lstrevers.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/libft/ft_lstrevers.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -248,6 +106,14 @@
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="new_check_figure" />
+      </map>
+    </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -259,11 +125,19 @@
         <option value="$PROJECT_DIR$/main.c" />
         <option value="$PROJECT_DIR$/solve.c" />
         <option value="$PROJECT_DIR$/scr/test.cpp" />
+        <option value="$PROJECT_DIR$/includes/libft/libft.h" />
+        <option value="$PROJECT_DIR$/includes/libft/ft_lstrevers.c" />
+        <option value="$PROJECT_DIR$/scr/addition.c" />
         <option value="$PROJECT_DIR$/scr/solve.c" />
-        <option value="$PROJECT_DIR$/test/11.fillit" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/scr/main.c" />
+        <option value="$PROJECT_DIR$/includes/libft/tests/ft_lstfree.c" />
+        <option value="$PROJECT_DIR$/includes/libft/ft_lstfree.c" />
         <option value="$PROJECT_DIR$/scr/fillit.h" />
+        <option value="$PROJECT_DIR$/scr/main.c" />
+        <option value="$PROJECT_DIR$/Makefile" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/test/11.fillit" />
+        <option value="$PROJECT_DIR$/src/main.c" />
+        <option value="$PROJECT_DIR$/src/solve.c" />
       </list>
     </option>
   </component>
@@ -274,10 +148,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="63" />
-    <option name="y" value="24" />
-    <option name="width" value="1537" />
-    <option name="height" value="876" />
+    <option name="x" value="317" />
+    <option name="y" value="23" />
+    <option name="width" value="1600" />
+    <option name="height" value="969" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -362,16 +236,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fillit" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fillit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/solve.c" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/includes/libft" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.fillit">
     <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="fillit" TARGET_NAME="fillit" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
@@ -539,7 +432,7 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="fillit" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="$PROJECT_DIR$/test/11.fillit" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="fillit" TARGET_NAME="fillit" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="fillit" RUN_TARGET_NAME="fillit">
+    <configuration default="false" name="fillit" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="$PROJECT_DIR$/test/11.fillit " WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="fillit" TARGET_NAME="fillit" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="fillit" RUN_TARGET_NAME="fillit">
       <envs />
       <method />
     </configuration>
@@ -584,33 +477,63 @@
       <option name="project" value="LOCAL" />
       <updated>1482885750509</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="parsing of the functions&#10;">
+      <created>1482936111511</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1482936111511</updated>
+    </task>
+    <task id="LOCAL-00004" summary="parsing of the functions&#10;">
+      <created>1482936192064</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1482936192064</updated>
+    </task>
+    <task id="LOCAL-00005" summary="parsing of the functions&#10;">
+      <created>1482949072817</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1482949072817</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="114964000" />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="63" y="24" width="1537" height="876" extended-state="6" />
-    <editor active="false" />
+    <frame x="317" y="23" width="1600" height="969" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.116460636" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33834586" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32330826" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283208" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.113362886" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951945" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34553775" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2888889" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35125858" sideWeight="0.5022166" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27459955" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31578946" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35213032" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35125858" sideWeight="0.4977834" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -627,134 +550,29 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Problems with letter into solved array + don't accept the figure &quot;S&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Problems with letter into solved array + don't accept the figure &quot;S&quot;" />
+    <MESSAGE value="parsing of the functions&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="parsing of the functions&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/scr/main.c</url>
-          <line>6</line>
-          <option name="timeStamp" value="7" />
+          <line>5</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/main.c</url>
+          <line>7</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="8" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solve.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="0" selection-start-line="0" selection-start-column="2" selection-end-line="274" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fillit.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/11.fillit">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solve.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2502">
-          <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fillit.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/11.fillit">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solve.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fillit.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/main.c" />
     <entry file="file://$PROJECT_DIR$/test/11.fillit">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -771,46 +589,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/solve.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fillit.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fillit.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/solve.c" />
+    <entry file="file://$PROJECT_DIR$/fillit.h" />
+    <entry file="file://$PROJECT_DIR$/main.c" />
+    <entry file="file://$PROJECT_DIR$/fillit.h" />
+    <entry file="file://$PROJECT_DIR$/main.c" />
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -826,22 +609,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fillit.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/fillit.h" />
+    <entry file="file://$PROJECT_DIR$/main.c" />
     <entry file="file://$PROJECT_DIR$/../libft/libft.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
@@ -849,22 +618,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fillit.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/fillit.h" />
+    <entry file="file://$PROJECT_DIR$/main.c" />
     <entry file="file://$PROJECT_DIR$/../libft/libft.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
@@ -872,22 +627,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fillit.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/fillit.h" />
+    <entry file="file://$PROJECT_DIR$/main.c" />
     <entry file="file://$PROJECT_DIR$/../libft/libft.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
@@ -895,28 +636,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fillit.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/include/_G_config.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="55" column="22" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/include/libio.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="42" column="24" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/fillit.h" />
+    <entry file="file:///usr/include/_G_config.h" />
+    <entry file="file:///usr/include/libio.h" />
     <entry file="file:///usr/include/stdio.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
@@ -924,27 +646,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libft/ft_lstadd.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libft/ft_memdel.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libft/ft_lstdel.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/ft_lstadd.c" />
+    <entry file="file://$PROJECT_DIR$/libft/ft_memdel.c" />
+    <entry file="file://$PROJECT_DIR$/libft/ft_lstdel.c" />
     <entry file="file://$PROJECT_DIR$/../libft/libft.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -953,95 +657,148 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fillit.h">
+    <entry file="file://$PROJECT_DIR$/fillit.h" />
+    <entry file="file://$PROJECT_DIR$/addition.c" />
+    <entry file="file://$PROJECT_DIR$/main.c" />
+    <entry file="file://$PROJECT_DIR$/libft/libft.h" />
+    <entry file="file://$PROJECT_DIR$/solve.c" />
+    <entry file="file://$PROJECT_DIR$/scr/test.cpp" />
+    <entry file="file://$PROJECT_DIR$/includes/libft/libft.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+        <state relative-caret-position="195">
+          <caret line="40" column="51" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addition.c">
+    <entry file="file://$PROJECT_DIR$/includes/libft/ft_lstfree.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="28" />
+        <state relative-caret-position="60">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/libft/ft_lstfree.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fillit.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libft/libft.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/solve.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scr/test.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/11.fillit">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scr/solve.c">
+    <entry file="file://$PROJECT_DIR$/Makefile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scr/fillit.h">
+    <entry file="file://$PROJECT_DIR$/test/12.fillit">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="209">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/8x8valid.fillit">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="98" column="64" selection-start-line="98" selection-start-column="64" selection-end-line="98" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+        <state relative-caret-position="195">
+          <caret line="13" column="89" selection-start-line="13" selection-start-column="89" selection-end-line="13" selection-end-column="89" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scr/main.c">
+    <entry file="file://$PROJECT_DIR$/src/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/11.fillit">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/libft/ft_lstrevers.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/addition.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/solve.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="54" column="15" selection-start-line="54" selection-start-column="12" selection-end-line="98" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -5,6 +5,8 @@
     <sourceRoots>
       <file path="$PROJECT_DIR$/includes" />
     </sourceRoots>
+    <libraryRoots />
+    <excludeRoots />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />

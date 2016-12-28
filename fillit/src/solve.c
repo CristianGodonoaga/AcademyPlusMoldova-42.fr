@@ -17,7 +17,7 @@ void	print_arr(char **array, int size)
 				ft_putchar('.');
 			j++;
 		}
-		//free(&array[i][0]);
+		free(array[i]);
 		ft_putchar('\n');
 		i++;
 	}
@@ -75,7 +75,8 @@ void	place_out(char **pArray, short y, short x, short *pCoord)
 	pArray[y + pCoord[6]][x + pCoord[7]] = 0;
 }
 
-int		place(char **pArray, short y, short x, int size, short *pCoord, char letter)
+int		place(char **pArray, short y, short x, int size,
+				 short *pCoord, char letter)
 {
 	short	i;
 
@@ -91,8 +92,6 @@ int		place(char **pArray, short y, short x, int size, short *pCoord, char letter
 		pArray[y + pCoord[2]][x + pCoord[3]] = letter;
 		pArray[y + pCoord[4]][x + pCoord[5]] = letter;
 		pArray[y + pCoord[6]][x + pCoord[7]] = letter;
-		//printf("x = %i, y = %i\n", x, y);
-		//print_arr(pArray, size);
 		return (1);
 	}
 	return (0);

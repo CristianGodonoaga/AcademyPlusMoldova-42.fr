@@ -22,11 +22,7 @@ int			main(int argc, char **argv)
 	solve(tList_figures);
 	return (0);
 }
-/*
-**
-**
-**
-*/
+
 t_list		*ft_figure_extract(int fd)
 {
 	char	buf[BUFSIZ + 1];
@@ -135,4 +131,3 @@ t_piece*		get_coordinates(t_piece *temp, char buf[])
 		return (temp);
 	return (NULL);
 }
-
