@@ -1,60 +1,69 @@
 #include "fillit.h"
 
-void	print_arr(char **array , int size)
+void	print_arr(char **array, int size)
 {
-	for (int i = 0; i < size; ++i)
+	int		i;
+	int		j;
+
+	i = 0;
+	while (i < size)
 	{
-		for (int j = 0; j < size; ++j)
+		j = 0;
+		while (j < size)
 		{
 			if (array[i][j])
 				ft_putchar(array[i][j]);
 			else
 				ft_putchar('.');
+			j++;
 		}
+		//free(&array[i][0]);
 		ft_putchar('\n');
+		i++;
 	}
-	ft_putchar('\n');
+	free(array);
 }
 
-char	**solve(t_list *pList_fig)
+void	solve(t_list *pList_fig)
 {
-	int 	size;
-	char 	**array;
+	int		size;
+	char	**array;
 	size = high_sqrt((((t_piece*)(pList_fig->content))->letter - '@') * 4);
 	if (size < 4)
 		size = 4;
 	ft_lstrevers(&pList_fig);
 	array = get_array(size + 1);
 	if (solve_tetrimino(array, size, pList_fig))
+	{
 		print_arr(array, size);
+		return ;
+	}
 	if (solve_tetrimino(array, size + 1, pList_fig))
-		print_arr(array, size +1);
-	//free()
-	return NULL;
+		print_arr(array, size + 1);
 }
 
 int		solve_tetrimino(char **array, int size, t_list *pList)
 {
 	short	x;
-	short 	y;
-	short	*coord;
-	char	letter;
+	short	y;
 
 	if (!pList)
 		return (1);
-	coord = &((t_piece*)(pList->content))->coord[0][0];
-	letter = ((t_piece*)(pList->content))->letter;
 	y = 0;
 	while (y < size)
 	{
 		x = 0;
 		while (x < size)
 		{
-			if (place(array, y, x, size, coord, letter))
+			if (place(array, y, x, size, &((t_piece*)(pList->content))->
+					coord[0][0], ((t_piece*)(pList->content))->letter))
+			{
 				if (solve_tetrimino(array, size, pList->next))
 					return (1);
 				else
-					place_out(array, y, x, coord);
+					place_out(array, y, x, &((t_piece*)(pList->content))->
+							coord[0][0]);
+			}
 			x++;
 		}
 		y++;

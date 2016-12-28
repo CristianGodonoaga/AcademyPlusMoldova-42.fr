@@ -8,7 +8,7 @@
 
 #include "../includes/libft/libft.h"
 
-#define BUFSIZ 20
+#define BUFSIZ 21
 typedef struct	s_piece
 {
 	char		letter;
@@ -18,7 +18,7 @@ typedef struct	s_piece
 t_list		*ft_figure_extract(int string);
 t_piece		*detect_figure(char *buf, int length, char letter);
 t_piece		*get_coordinates(t_piece *temp, char buf[]);
-char		**solve(t_list *pList_fig);
+void solve(t_list *pList_fig);
 int			solve_tetrimino(char **array, int size, t_list *pList);
 char		**get_array(int size);
 int			place(char **pArray, short y, short x, int size,

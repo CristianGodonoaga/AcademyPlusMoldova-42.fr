@@ -1,6 +1,6 @@
 #include "stdlib.h"
 
-int			high_sqrt(int n)
+int		high_sqrt(int n)
 {
 	int		size;
 
@@ -10,11 +10,11 @@ int			high_sqrt(int n)
 	return (size);
 }
 
-char **get_array(int size)
+char	**get_array(int size)
 {
-	char 	**temp;
-	int 	i;
-	int 	j;
+	char	**temp;
+	int		i;
+	int		j;
 
 	temp = (char**)malloc(sizeof(char*) * size);
 	if (!temp)
