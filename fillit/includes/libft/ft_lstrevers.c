@@ -12,15 +12,15 @@
 
 #include "libft.h"
 
-void		ft_lstrevers(t_list **pToHead)
+void		ft_lstrevers(t_list **pT_head)
 {
 	t_list	*preview;
 	t_list	*current;
 	t_list	*next;
 
-	if (!pToHead)
+	if (!pT_head)
 		return ;
-	current = *pToHead;
+	current = *pT_head;
 	preview = NULL;
 	while (current)
 	{
@@ -29,5 +29,5 @@ void		ft_lstrevers(t_list **pToHead)
 		preview = current;
 		current = next;
 	}
-	*pToHead = preview;
+	*pT_head = preview;
 }
