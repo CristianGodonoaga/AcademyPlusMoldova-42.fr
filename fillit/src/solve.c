@@ -28,18 +28,14 @@ void	solve(t_list *pList_fig)
 {
 	int		size;
 	char	**array;
+
 	size = high_sqrt((((t_piece*)(pList_fig->content))->letter - '@') * 4);
-	if (size < 4)
-		size = 4;
+
 	ft_lstrevers(&pList_fig);
 	array = get_array(size + 1);
-	if (solve_tetrimino(array, size, pList_fig))
-	{
-		print_arr(array, size);
-		return ;
-	}
-	if (solve_tetrimino(array, size + 1, pList_fig))
-		print_arr(array, size + 1);
+	while(!solve_tetrimino(array, size, pList_fig) && size < 104)
+		size++;
+	print_arr(array, size);
 }
 
 int		solve_tetrimino(char **array, int size, t_list *pList)

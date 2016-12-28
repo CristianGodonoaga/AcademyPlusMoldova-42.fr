@@ -54,6 +54,31 @@ t_list		*ft_figure_extract(int fd)
 	return (list_head);
 }
 
+int		check_connection(char *str)
+{
+	int block;
+	int i;
+
+	block = 0;
+	i = 0;
+	while (i < 20)
+	{
+		if (str[i] == '#')
+		{
+			if ((i + 1) < 20 && str[i + 1] == '#')
+				block++;
+			if ((i - 1) >= 0 && str[i - 1] == '#')
+				block++;
+			if ((i + 5) < 20 && str[i + 5] == '#')
+				block++;
+			if ((i - 5) >= 0 && str[i - 5] == '#')
+				block++;
+		}
+		i++;
+	}
+	return (block == 6 || block == 8);
+}
+
 /*
 **Check and validate the tetriminos figure
 */
@@ -66,7 +91,7 @@ t_piece			*detect_figure(char *buf, int length, char letter)
 	temp = (t_piece*)malloc(sizeof(*temp));
 	if (!temp)
 		return (NULL);
-	if (!(temp = get_coordinates(temp, buf)))
+	if (!check_connection(buf) || !(temp = get_coordinates(temp, buf)))
 	{
 		free(temp);
 		return (NULL);
@@ -93,20 +118,15 @@ t_piece*		get_coordinates(t_piece *temp, char buf[])
 
 	i = 0;
 	j = 0;
-	while ((buf[i] == '#' || buf[i] == '.' || buf[i] == 1) ||
+	while ((buf[i] == '#' || buf[i] == '.') ||
 			((!(i % 5 < 4) && buf[i] == '\n') && i < 20))
 	{
-		if (((buf[i] == '#' && !j) || (buf[i] == '#' && buf[i + 1] == 1)) ||
-				buf[i] == 1)
+		if (buf[i] == '#')
 		{
 			if (j > 3)
 				return (NULL);
 			temp->coord[j][0] = (short)((i + 1) / 5);
 			temp->coord[j][1] = (short)(i - ((i + 1) / 5) * 5);
-			if (((i + 1) % 5) && buf[i + 1] == '#')
-				buf[i + 1] = 1;
-			if ((i + 5 < 20) && buf[i + 5] == '#')
-				buf[i + 5] = 1;
 			j++;
 		}
 		i++;
@@ -115,3 +135,4 @@ t_piece*		get_coordinates(t_piece *temp, char buf[])
 		return (temp);
 	return (NULL);
 }
+
