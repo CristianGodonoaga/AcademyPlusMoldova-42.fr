@@ -6,42 +6,16 @@
 #include <string.h>
 #include <stdbool.h>
 
-
-t_list		*ft_figure_extract(int string);
-
-t_piece		*detect_figure(char *buf, int length, char letter);
-
-t_piece		*get_coordinates(t_piece *temp, char buf[]);
-
-char		**solve(t_list *pList_fig);
-
-int			solve_tetrimino(char **array, int size, t_list *pList);
-
-char **get_array(int size);
-
-int place(char **pArray, short x, short y, int size, short *pCoord);
-
-void place_out(char **pArray, short x, short y, short *pCoord);
-
-void        ft_lstfree(t_list **pT_head)
-{
-	t_list	*ptr_next;
-
-	while (*pT_head)
-	{
-		ptr_next = (*pT_head)->next;
-		free((*pT_head)->content);
-		free(*pT_head);
-		*pT_head = ptr_next;
-	}
-	*pT_head = NULL;
-}
 void print_arr(char **array , int size)
 {
 	for (int i = 0; i < size; ++i)
 	{
-		for (int j = 0; j < size; ++j) {
-			printf("%i", array[i][j]);
+		for (int j = 0; j < size; ++j)
+		{
+			if (array[i][j])
+				printf("%c", array[i][j]);
+			else
+			printf(".");
 		}
 		printf("\n");
 	}
@@ -50,8 +24,8 @@ void print_arr(char **array , int size)
 
 int			main(int argc, char **argv)
 {
-    int		fd;
-    t_list	*tList_figures;
+	int		fd;
+	t_list	*tList_figures;
 	char 	**array;
 
     if(argc != 2)
@@ -59,22 +33,22 @@ int			main(int argc, char **argv)
         ft_putstr("number of parameter is invalid");
         return (0);
     }
-    if(!(tList_figures = ft_figure_extract(fd = open(argv[1], O_RDONLY | O_CREAT))))
+    if(!(tList_figures = ft_figure_extract(fd =
+			open(argv[1], O_RDONLY | O_CREAT))))
     {
-        ft_putstr("error");
+        ft_putstr("error\n");
         return (0);
     }
 	close(fd);
 	array = solve(tList_figures);
 
-	//print
-    return (0);
+	return (0);
 }
 
 
 int			high_sqrt(int n)
 {
-	int size;
+	int		size;
 
 	size = 2;
 	while (size * size < n)
@@ -89,17 +63,13 @@ char		**solve(t_list *pList_fig)
 	size = high_sqrt((((t_piece*)(pList_fig->content))->letter - '@') * 4);
 	if (size < 4)
 		size = 4;
+	ft_lstrevers(&pList_fig);
 	array = get_array(size + 1);
 	if (solve_tetrimino(array, size, pList_fig))
-	{
 		print_arr(array, size);
-		return (array);
-	}
 	if (solve_tetrimino(array, size + 1, pList_fig))
-	{
 		print_arr(array, size +1);
-		return (array);
-	}
+	//free()
 	return NULL;
 }
 
@@ -108,21 +78,23 @@ int			solve_tetrimino(char **array, int size, t_list *pList)
 	short	x;
 	short 	y;
 	short	*coord;
+	char	letter;
 
 	if (!pList)
 		return (1);
 	coord = &((t_piece*)(pList->content))->coord[0][0];
+	letter = ((t_piece*)(pList->content))->letter;
 	y = 0;
 	while (y < size)
 	{
 		x = 0;
 		while (x < size)
 		{
-			if (place(array, x, y, size, coord))
+			if (place(array, y, x, size, coord, letter))
 				if (solve_tetrimino(array, size, pList->next))
 					return (1);
 				else
-					place_out(array, x, y, coord);
+					place_out(array, y, x, coord);
 			x++;
 		}
 		y++;
@@ -130,30 +102,32 @@ int			solve_tetrimino(char **array, int size, t_list *pList)
 	return (0);
 }
 
-void place_out(char **pArray, short x, short y, short *pCoord)
+void place_out(char **pArray, short y, short x, short *pCoord)
 {
-	pArray[x + pCoord[0]][y + pCoord[1]] = 1;
-	pArray[x + pCoord[2]][y + pCoord[3]] = 1;
-	pArray[x + pCoord[4]][y + pCoord[5]] = 1;
-	pArray[x + pCoord[6]][y + pCoord[7]] = 1;
+	pArray[y + pCoord[0]][x + pCoord[1]] = 0;
+	pArray[y + pCoord[2]][x + pCoord[3]] = 0;
+	pArray[y + pCoord[4]][x + pCoord[5]] = 0;
+	pArray[y + pCoord[6]][x + pCoord[7]] = 0;
 }
 
-int place(char **pArray, short x, short y, int size, short *pCoord)
+int place(char **pArray, short y, short x, int size, short *pCoord, char letter)
 {
 	short	i;
 
 	i = 0;
-	while (i < 7 && x + pCoord[i] < size && y + pCoord[i + 1] < size &&
-			x + pCoord[i] >= 0 && y + pCoord[i + 1] >= 0)
+	while (i < 7 && y + pCoord[i] < size && x + pCoord[i + 1] < size &&
+			y + pCoord[i] >= 0 && x + pCoord[i + 1] >= 0)
 		i += 2;
-	if (i == 8 &&  pArray[x + pCoord[0]][y + pCoord[1]] && pArray[x +
-			pCoord[2]][y + pCoord[3]] && pArray[x + pCoord[4]][y +
-			pCoord[5]] && pArray[x + pCoord[6]][y + pCoord[7]])
+	if (i == 8 && !(pArray[y + pCoord[0]][x + pCoord[1]] || pArray[y +
+			pCoord[2]][x + pCoord[3]] || pArray[y + pCoord[4]][x +
+			pCoord[5]] || pArray[y + pCoord[6]][x + pCoord[7]]))
 	{
-		pArray[x + pCoord[0]][y + pCoord[1]] = 0;
-		pArray[x + pCoord[2]][y + pCoord[3]] = 0;
-		pArray[x + pCoord[4]][y + pCoord[5]] = 0;
-		pArray[x + pCoord[6]][y + pCoord[7]] = 0;
+		pArray[y + pCoord[0]][x + pCoord[1]] = letter;
+		pArray[y + pCoord[2]][x + pCoord[3]] = letter;
+		pArray[y + pCoord[4]][x + pCoord[5]] = letter;
+		pArray[y + pCoord[6]][x + pCoord[7]] = letter;
+		//printf("x = %i, y = %i\n", x, y);
+		//print_arr(pArray, size);
 		return (1);
 	}
 	return (0);
@@ -177,7 +151,7 @@ char **get_array(int size)
 			return (NULL);
 		while (j < size)
 		{
-			*(*(temp + i) + j) = 1;
+			*(*(temp + i) + j) = 0;
 			j++;
 		}
 		i++;
@@ -213,8 +187,7 @@ t_list      *ft_figure_extract(int fd)
 		ft_lstfree(&list_head);
 		return (NULL);
 	}
-	//ft_lstrevers(&list_head);
-    return (list_head);
+	return (list_head);
 }
 
 /*
@@ -227,8 +200,13 @@ t_piece			*detect_figure(char *buf, int length, char letter)
     if (length == 21 && buf[20] != '\n')
         return (NULL);
     temp = (t_piece*)malloc(sizeof(*temp));
-	if (!temp || !(temp = get_coordinates(temp, buf)))
+	if (!temp)
         return (NULL);
+	if (!(temp = get_coordinates(temp, buf)))
+	{
+		free(temp);
+		return (NULL);
+	}
 	temp->letter = letter;
 	temp->coord[1][0] -= temp->coord[0][0];
 	temp->coord[1][1] -= temp->coord[0][1];
@@ -253,8 +231,11 @@ t_piece*     get_coordinates(t_piece *temp, char buf[])
     while ((buf[i] == '#' || buf[i] == '.' || buf[i] == 1) ||
             (!(i % 5 < 4) && buf[i] == '\n') && i < 20)
     {
-        if ((buf[i] == '#' && !j) || buf[i] == 1)
+        if ((buf[i] == '#' && !j || (buf[i] == '#' && buf[i +1 ] == 1)) ||
+				buf[i] == 1)
         {
+			if (j > 3)
+				return (NULL);
             temp->coord[j][0] = (short)((i + 1) / 5);
             temp->coord[j][1] = (short)(i - ((i + 1) / 5) * 5);
             if (((i + 1) % 5) && buf[i + 1] == '#')
@@ -265,7 +246,7 @@ t_piece*     get_coordinates(t_piece *temp, char buf[])
         }
         i++;
     }
-    if(j == 4)
+    if (j == 4)
         return (temp);
     return (NULL);
 }
