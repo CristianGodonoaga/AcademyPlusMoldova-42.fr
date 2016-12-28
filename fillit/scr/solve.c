@@ -1,7 +1,6 @@
 #include "fillit.h"
-#include "../includes/libft/libft.h"
 
-void print_arr(char **array , int size)
+void	print_arr(char **array , int size)
 {
 	for (int i = 0; i < size; ++i)
 	{
@@ -17,7 +16,7 @@ void print_arr(char **array , int size)
 	ft_putchar('\n');
 }
 
-char		**solve(t_list *pList_fig)
+char	**solve(t_list *pList_fig)
 {
 	int 	size;
 	char 	**array;
@@ -34,7 +33,7 @@ char		**solve(t_list *pList_fig)
 	return NULL;
 }
 
-int			solve_tetrimino(char **array, int size, t_list *pList)
+int		solve_tetrimino(char **array, int size, t_list *pList)
 {
 	short	x;
 	short 	y;
@@ -63,7 +62,7 @@ int			solve_tetrimino(char **array, int size, t_list *pList)
 	return (0);
 }
 
-void place_out(char **pArray, short y, short x, short *pCoord)
+void	place_out(char **pArray, short y, short x, short *pCoord)
 {
 	pArray[y + pCoord[0]][x + pCoord[1]] = 0;
 	pArray[y + pCoord[2]][x + pCoord[3]] = 0;
@@ -71,7 +70,7 @@ void place_out(char **pArray, short y, short x, short *pCoord)
 	pArray[y + pCoord[6]][x + pCoord[7]] = 0;
 }
 
-int place(char **pArray, short y, short x, int size, short *pCoord, char letter)
+int		place(char **pArray, short y, short x, int size, short *pCoord, char letter)
 {
 	short	i;
 

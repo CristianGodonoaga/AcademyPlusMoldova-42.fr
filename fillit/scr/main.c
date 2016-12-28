@@ -94,9 +94,9 @@ t_piece*		get_coordinates(t_piece *temp, char buf[])
     i = 0;
     j = 0;
     while ((buf[i] == '#' || buf[i] == '.' || buf[i] == 1) ||
-            (!(i % 5 < 4) && buf[i] == '\n') && i < 20)
+            ((!(i % 5 < 4) && buf[i] == '\n') && i < 20))
     {
-        if ((buf[i] == '#' && !j || (buf[i] == '#' && buf[i +1 ] == 1)) ||
+        if (((buf[i] == '#' && !j) || (buf[i] == '#' && buf[i +1 ] == 1)) ||
 				buf[i] == 1)
         {
 			if (j > 3)
