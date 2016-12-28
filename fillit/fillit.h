@@ -10,7 +10,7 @@
 typedef struct  s_piece
 {
     char        letter;
-    short       coordinates[4][2];
+    short       coord[4][2];
 }               t_piece;
 
 #endif //FILLIT_FILLIT_H

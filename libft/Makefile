@@ -6,7 +6,7 @@
 #    By: cgodonoa <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/11 16:34:31 by cgodonoa          #+#    #+#              #
-#*   Updated: 2016/12/17 11:13:12 by                  ###   ########.fr       *#
+#    Updated: 2016/12/27 01:34:43 by cgodonoa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,10 +24,11 @@ SRC =	ft_isascii.c ft_memcmp.c ft_strchr.c ft_strlen.c ft_strrchr.c		\
 		ft_strtrim.c ft_putnbr.c ft_strsplit.c ft_itoa.c ft_putendl.c		\
 		ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c		\
 		ft_lstnew.c ft_lstdelone.c ft_lstadd.c ft_lstiter.c ft_lstmap.c		\
-		ft_lstdel.c							 								\
+		ft_lstdel.c	ft_lstrevers.c			 								\
 		ft_swap.c ft_strlcpy.c ft_str_is_printable.c ft_strupcase.c			\
 		ft_strlowcase.c	ft_count_digit.c ft_itoa_base.c						\
-		ft_reverse_bits.c ft_print_bits.c									\
+		ft_reverse_bits.c ft_print_bits.c
+		
 OBJECT = $(SRC:.c=.o)
 
 all: $(NAME)

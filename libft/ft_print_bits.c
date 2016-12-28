@@ -6,7 +6,7 @@
 /*   By: cgodonoa <cgodonoa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/01 19:34:36 by cgodonoa          #+#    #+#             */
-/*   Updated: 2016/12/01 19:39:40 by cgodonoa         ###   ########.fr       */
+/*   Updated: 2016/12/25 21:32:21 by cgodonoa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	print_bits(unsigned char octet)
 {
-	unsigned char	i;
+	char	i;
 
 	i = 7;
 	while (i >= 0)
