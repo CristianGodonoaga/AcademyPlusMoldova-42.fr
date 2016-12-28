@@ -5,6 +5,10 @@
 **This structure stores the coordinates of figure + character which designate
 **order of figures
 */
+
+#include "../includes/libft/libft.h"
+
+#define BUFSIZ 20
 typedef struct	s_piece
 {
 	char		letter;
@@ -20,6 +24,7 @@ char		**get_array(int size);
 int			place(char **pArray, short y, short x, int size,
 		short *pCoord ,char letter);
 void		place_out(char **pArray, short y, short x, short *pCoord);
+int			high_sqrt(int n);
 #endif
 /*
 **End of define #FILLIT_FILLIT_H

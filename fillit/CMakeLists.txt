@@ -3,11 +3,13 @@ project(fillit)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-#INCLUDE_DIRECTORIES(/home/cristian/Documents/GidHub/Univer/libft/libft.h)
-#LINK_DIRECTORIES(/home/cristian/Documents/GidHub/Univer/libft/)
-#add_library(libft STATIC IMPORTED_LOCATION  /home/cristian/Documents/GidHub/Univer/libft/)
-#set_property(TARGET libft PROPERTY IMPORTED_LOCATION ../libft/libft.a)
+INCLUDE_DIRECTORIES(/home/cristian/Documents/Github/Univer/libft/)
+LINK_DIRECTORIES(/home/cristian/Documents/Github/Univer/libft/)
 
-set(SOURCE_FILES main.c fillit.h solve.c)
-add_executable(fillit ${SOURCE_FILES} fillit.h)
-#target_link_libraries(fillit /home/cristian/Documents/GidHub/Univer/libft)
+add_library(libft.a STATIC IMPORTED_LOCATION
+        /home/cristian/Documents/Github/Univer/libft/)
+#set_property(TARGET libft PROPERTY IMPORTED_LOCATION ./home/cristian/Documents/Github/Univer/libft/libft.a)
+
+set(SOURCE_FILES scr/main.c scr/fillit.h scr/solve.c scr/addition.c)
+add_executable(fillit ${SOURCE_FILES} scr/fillit.h)
+target_link_libraries(fillit /home/cristian/Documents/Github/Univer/libft/libft.a)

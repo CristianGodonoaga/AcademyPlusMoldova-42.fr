@@ -2,10 +2,12 @@
 <module type="CPP_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/main.c" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/solve.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/scr/addition.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/scr/fillit.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/scr/main.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/scr/solve.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/fillit.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/includes" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
@@ -15,12 +17,14 @@
           <root url="file:///usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
           <root url="file:///usr/include" />
           <root url="file:///usr/local/include" />
+          <root url="file://$MODULE_DIR$/../libft" />
         </CLASSES>
         <SOURCES>
           <root url="file:///usr/lib/gcc/x86_64-linux-gnu/5/include" />
           <root url="file:///usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
           <root url="file:///usr/include" />
           <root url="file:///usr/local/include" />
+          <root url="file://$MODULE_DIR$/../libft" />
         </SOURCES>
       </library>
     </orderEntry>
