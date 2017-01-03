@@ -32,7 +32,7 @@ void	solve(t_list *pList_fig)
 	size = high_sqrt((((t_piece*)(pList_fig->content))->letter - '@') * 4);
 
 	ft_lstrevers(&pList_fig);
-	array = get_array(size + 1);
+	array = get_array(size + 2);
 	while(!solve_tetrimino(array, size, pList_fig) && size < 104)
 		size++;
 	print_arr(array, size);
