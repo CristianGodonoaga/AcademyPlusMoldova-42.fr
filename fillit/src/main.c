@@ -70,6 +70,8 @@ int		check_connection(char *str)
 			if ((i - 5) >= 0 && str[i - 5] == '#')
 				block++;
 		}
+		//else if ()
+		//	return (0);
 		i++;
 	}
 	return (block == 6 || block == 8);
@@ -127,7 +129,7 @@ t_piece*		get_coordinates(t_piece *temp, char buf[])
 		}
 		i++;
 	}
-	if (j == 4)
+	if (j == 4 && i > 19)
 		return (temp);
 	return (NULL);
 }
