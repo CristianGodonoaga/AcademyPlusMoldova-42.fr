@@ -1,62 +1,85 @@
-#include <stdlib>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cgodonoa <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/02/11 13:42:42 by cgodonoa          #+#    #+#             */
+/*   Updated: 2017/02/11 13:42:45 by cgodonoa         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-typedef struct	list_s
+#include "get_next_line.h"
+
+int			create_oneline(t_list *head_list, char **line)
 {
-	char		str[10];
-	short		length;
-	struct		list_s* ptr_to_next;
-}				list_t;
+	t_list	*next;
+	int		i;
+	int		j;
 
-typedef struct	list_extend_s
-{
-	char		str[10];
-	short		length;
-	struct		list_s* ptr_to_next;
-	int			nbr_of_obj;
-}				list_extend_t;
-
-int		create_oneline(list_t* head_list, char** line)
-{
-	list_t* curent;
-
+	i = 0;
 	*line = (char*)malloc(sizeof(char) *
-	 ((list_extend_s*)head_list)->nbr_of_obj + 1);
-	curent
-	while()
+			((t_list_extend*)head_list)->nbr_of_obj + 1);
+	if (!*line)
+		return (-1);
+	while (head_list)
 	{
-
+		next = head_list->ptr_to_next;
+		j = 0;
+		while (j < head_list->length)
+		{
+			*line[j] = head_list->str[j];
+			j++;
+		}
+		free(head_list);
+		head_list = next;
 	}
+	return (1);
 }
 
-int		add_char_onlist(list_t** head, list_t** obj, char c)
+int			add_char_onlist(t_list **head, t_list **obj, char c)
 {
 	if (!*head)
 	{
-		if (!*head = (list_t*)malloc(sizeof(list_extend_t)))
+		if (!(*head = (t_list*)malloc(sizeof(t_list_extend))))
 			return (-1);
-		(*(*list_extend_s)head)->nbr_of_obj = 0;
+		(*(t_list_extend*)head).nbr_of_obj = 0;
 		(*head)->length = 0;
 		(*head)->ptr_to_next = NULL;
 		*obj = *head;
 	}
 	if ((*obj)->length == 10)
 	{
-		if (!(*obj)->ptr_to_next = (list_t*)malloc(sizeof(list_t)))
+		if (!((*obj)->ptr_to_next = (t_list*)malloc(sizeof(t_list))))
 			return (-1);
 		((*obj)->ptr_to_next)->length = 0;
 		((*obj)->ptr_to_next)->ptr_to_next = NULL;
 		return (add_char_onlist(head, obj, c));
 	}
-	(*head(*list_extend_s))->nbr_of_obj++;
-	(*obj)->str[length] = c;
+	(*(t_list_extend*)head).nbr_of_obj++;
+	(*obj)->str[(*obj)->length] = c;
 	(*obj)->length++;
 	return (1);
 }
 
-int		get_next_line(int const fd, char** line)
+void		delete_list(t_list **head_list)
 {
-	list_t*	head_list;
-	list_t*	current_obj;
+	t_list	*ptr_to_next;
+
+	while (*head_list)
+	{
+		ptr_to_next = (*head_list)->ptr_to_next;
+		free(*head_list);
+		*head_list = ptr_to_next;
+	}
+	*head_list = NULL;
+}
+
+int			get_next_line(int const fd, char **line)
+{
+	t_list	*head_list;
+	t_list	*current_obj;
 	char	buff[1];
 	int		length;
 
@@ -66,15 +89,15 @@ int		get_next_line(int const fd, char** line)
 	while (legth = read(fd, buff, 1)) > 0 && buff[0] != '\n')
 		if (!add_char_onlist(&head_list, &current_obj, buff[1]))
 		{
-			dellete_list(head_list);
+			delete_list(&head_list);
 			return (-1);
 		}
 	if (length == -1)
-		{
-		dellete_list();
+	{
+		delete_list(&head_list);
 		return (-1);
-		}
-	if(head_list == NULL)
+	}
+	if (head_list == NULL)
 		return (0);
-	return(create_oneline(head_list, line));
+	return (create_oneline(head_list, line));
 }
