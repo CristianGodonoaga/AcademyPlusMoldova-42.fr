@@ -19,6 +19,8 @@ int		create_oneline(list_t* head_list, char** line)
 {
 	list_t* curent;
 
+	*line = (char*)malloc(sizeof(char) *
+	 ((list_extend_s*)head_list)->nbr_of_obj + 1);
 	curent
 	while()
 	{
@@ -58,9 +60,10 @@ int		get_next_line(int const fd, char** line)
 	char	buff[1];
 	int		length;
 
+	buff[0] = '\0';
 	head_list = NULL;
 	current_obj = NULL;
-	while (legth = read(fd, buff, 1)) > 0)
+	while (legth = read(fd, buff, 1)) > 0 && buff[0] != '\n')
 		if (!add_char_onlist(&head_list, &current_obj, buff[1]))
 		{
 			dellete_list(head_list);
